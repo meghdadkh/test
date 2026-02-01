@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+  <meta charset="UTF-8">
+  <title>معرفی محصول</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: sans-serif;
+    }
+
+    body {
+      direction: rtl;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    /* Header */
+    header {
+      background-color: #222;
+      color: #fff;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    .menu a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s;
+    }
+
+    .menu a:hover {
+      color: #ff9800;
+    }
+
+    /* Hero */
+    .hero {
+      background-color: #fff;
+      padding: 60px 0;
+    }
+
+    .hero-content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    .hero-text h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .hero-text p {
+      margin-bottom: 20px;
+      line-height: 1.8;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      border: none;
+      background-color: #ff9800;
+      color: #fff;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #e68900;
+    }
+
+    /* Features */
+    .features {
+      padding: 60px 0;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 28px;
+    }
+
+    .feature-list {
+      display: flex;
+      gap: 20px;
+    }
+
+    .feature-box {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      text-align: center;
+      flex: 1;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    .feature-box:hover {
+      transform: translateY(-5px);
+    }
+
+    .feature-box h4 {
+      margin-bottom: 15px;
+      font-size: 20px;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #222;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsive (اختیاری) */
+    @media (max-width: 768px) {
+      .hero-content,
+      .feature-list {
+        flex-direction: column;
+      }
+    }
+  </style>
+
+</head>
+<body>
+
+  <header>
+    <div class="container header-content">
+      <h1>MyProduct</h1>
+      <nav>
+        <ul class="menu">
+          <li><a href="#">خانه</a></li>
+          <li><a href="#">ویژگی‌ها</a></li>
+          <li><a href="#">درباره ما</a></li>
+          <li><a href="#">تماس</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <div class="container hero-content">
+        <div class="hero-text">
+          <h2>بهترین محصول برای زندگی بهتر</h2>
+          <p>
+            این محصول به شما کمک می‌کند سریع‌تر، بهتر و حرفه‌ای‌تر کار کنید.
+          </p>
+          <button class="btn">خرید محصول</button>
+        </div>
+
+        <div class="hero-image">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8szIChxuiFDF_lpQQ-uSltMXVLfuWraDqoKpGmLkBfwmkhrJCvmyOF5eAoIafp_wZ56g&usqp=CAU" alt="product">
+        </div>
+      </div>
+    </section>
+
+    <section class="features">
+      <div class="container">
+        <h3 class="section-title">ویژگی‌ها</h3>
+
+        <div class="feature-list">
+          <article class="feature-box">
+            <h4>سریع</h4>
+            <p>عملکرد فوق‌العاده سریع و بهینه</p>
+          </article>
+
+          <article class="feature-box">
+            <h4>ساده</h4>
+            <p>طراحی ساده و کاربرپسند</p>
+          </article>
+
+          <article class="feature-box">
+            <h4>امن</h4>
+            <p>امنیت بالا و قابل اعتماد</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 MyProduct. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
